@@ -6,7 +6,7 @@
     <script type="text/javascript">
       $(function(){
         $("#toggle").click(function(){
-          $("#target").toggle("slow");
+          $("img").toggle("slow");
         });
         $("p").hover(
           function(){
@@ -20,7 +20,8 @@
   </head>
   <body>
     <p>カーソルを乗せると色変更？</p>
-    <div id="target">内容を記述</div>
+    <div id="target">ボタンを押して表示切り替え</div>
+    <img src="img/bourei.jpg" alt="切り替え用画像"/>
     <button id="toggle">切り替え</button>
   </body>
 </html>
