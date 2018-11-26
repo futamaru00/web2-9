@@ -6,12 +6,16 @@
     <script type="text/javascript">
       $(function(){
         $("#toggle").click(function(){
-          $("#target").toggle(2000);
+          $("#target").toggle("slow");
+        });
+        $("p").hover(function(){
+          $("p").css("color","yellow");
         });
       });
     </script>
   </head>
   <body>
+    <p>ページトップ</p>
     <div id="target">内容を記述</div>
     <button id="toggle">切り替え</button>
   </body>
